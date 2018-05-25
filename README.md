@@ -21,4 +21,10 @@
   ·轮播
   
   ·tab切换
-  
+>效果图
+首页
+![image](https://typeofyh.github.io/bookCitys/page/home.png);
+搜索页
+![image](https://typeofyh.github.io/bookCitys/page/search.png);
+详情页
+![image](https://typeofyh.github.io/bookCitys/page/detail.png);
