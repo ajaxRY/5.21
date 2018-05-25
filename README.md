@@ -7,6 +7,8 @@
   ·bscroll
   ·swiper
   ·各种jquery插件
+  
+  
 >功能介绍
   ·轮播
   ·tab切换
