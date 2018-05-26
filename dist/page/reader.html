@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reader.css">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="section_list"></div>
+        <div class="book_cont">
+
+        </div>
+        <div class="book_option">
+            <div>
+                <header class="header">
+                    <span class="icon iconfont icon-xiangzuo"></span>
+                    <p class="back">返回</p>
+                    <span class="icon iconfont icon-gengduo"></span>
+                </header>
+                <main class="main"></main>
+                <footer class="footer">
+                    <div class="colsBox">
+                        <p class="font">字号<span class="bigger">大</span><span class="smaller">小</span></p>
+                        <p class="conBg">背景
+                            <b class="active"></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                        </p>
+                    </div>
+                    <div class="f_top">
+                        <span class="prev_btn">上一章</span>
+                        <p class="sections">0/0</p>
+                        <span class="next_btn">下一章</span>
+                    </div>
+                    <div class="f_bottom">
+                        <dl class="list">
+                            <dt>
+                        <i class="icon iconfont icon-shouqi-01"></i>                        
+                    </dt>
+                            <dd>目录</dd>
+                        </dl>
+                        <dl class="cols">
+                            <dt>
+                        <i class="icon iconfont icon-pinterest"></i>                        
+                    </dt>
+                            <dd>字体</dd>
+                        </dl>
+                        <dl class="style">
+                            <dt>
+                        <i class="icon iconfont icon-eyeoclose change"></i>                        
+                    </dt>
+                            <dd>夜间</dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                        <i class="icon iconfont icon-xiazai"></i>                        
+                    </dt>
+                            <dd>下载</dd>
+                        </dl>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/common/require.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    require(['reader']);
+</script>
+
+</html>

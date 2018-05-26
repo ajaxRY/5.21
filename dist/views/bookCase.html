@@ -1,0 +1,18 @@
+{{#each items}}
+<a href="javascript:;">
+    <dl class="conList">
+        <dt>        
+        <img src="{{cover}}">
+    </dt>
+        <dd>
+            <p class="tit">{{title}}</p>
+            <p class="author">{{authors}}</p>
+            <p class="con">{{summary}}</p>
+            <p class="tags">
+                {{#each tags}}
+                <span>{{this}}</span> {{/each}}
+            </p>
+        </dd>
+    </dl>
+</a>
+{{/each}}

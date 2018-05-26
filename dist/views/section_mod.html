@@ -1,0 +1,10 @@
+<header class="header">
+    <span class="icon iconfont icon-xiangzuo"></span>
+    <p>目录</p>
+    <span class="icon iconfont icon-shouye"></span>
+</header>
+<main class="main">
+    {{#each toc}}
+    <p data-id={{this.chapter_id}}>{{this.title}}</p>
+    {{/each}}
+</main>

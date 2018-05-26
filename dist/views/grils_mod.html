@@ -1,0 +1,22 @@
+<h4>{{name}}</h4>
+{{#each items}}
+<a href="../page/detail.html?id={{fiction_id}}">
+    <dl>
+        <dt>        
+        <img src="{{cover}}">
+    </dt>
+        <dd>
+            <p class="tit">{{title}}</p>
+            <p class="author">{{authors}}</p>
+            <p class="con">{{summary}}</p>
+            <p class="tags">
+                {{#each tags}}
+                <span>{{this}}</span> {{/each}}
+            </p>
+        </dd>
+    </dl>
+</a>
+{{/each}}
+<div class="more">
+    <p><span>换一换</span><span>查看全部</span></p>
+</div>

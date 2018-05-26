@@ -1,0 +1,28 @@
+<h4 class="recommen">
+    <span>{{name}}</span>
+    <p><span class="col">男</span>|<span>女</span></p>
+</h4>
+{{#each items}} {{#if @index}}
+<p><span class="num">0{{@index}}</span><span>{{title}}</span><span class="au">{{authors}}</span></p>
+{{else}}
+<a href="../page/detail.html?id={{fiction_id}}">
+    <dl>
+        <dt>
+        <b class="num">{{allow_free_read}}</b>
+        <img src="{{cover}}">
+    </dt>
+        <dd>
+            <p class="tit">{{title}}</p>
+            <p class="author">{{authors}}</p>
+            <p class="con">{{summary}}</p>
+            <p class="tags">
+                {{#each tags}}
+                <span>{{this}}</span> {{/each}}
+            </p>
+        </dd>
+    </dl>
+</a>
+{{/if}} {{/each}}
+<div class="more">
+    <p><span>换一换</span><span>查看全部</span></p>
+</div>

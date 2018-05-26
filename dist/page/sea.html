@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/sea.css">
+    <script>
+        document.documentElement.style.fontSize = window.innerWidth / 750 * 100 + 'px';
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <span><a href="./index.html"><</a></span>
+            <div>
+                <b></b>
+                <input type="text" placeholder="输入书名/作者/关键字">
+                <span class="add">搜索</span>
+            </div>
+        </header>
+        <div class="main">
+            <div class="sear_tags">
+
+            </div>
+        </div>
+    </div>
+    <script class="search_tags" type="text/x-handlebars-template">
+        {{#each ads}} {{#if status}}
+        <span class="tag"><a href="javascript:;">{{ad_name}}</a></span> {{else}}
+        <span class="active"><a href="javascript:;">{{ad_name}}</a></span> {{/if}} {{/each}}
+    </script>
+</body>
+<script src="../js/common/require.js"></script>
+<script src="../js/main.js"></script>
+<script>
+    require(['sea']);
+</script>
+
+</html>

@@ -1,0 +1,1 @@
+"use strict";define(["jquery"],function(e){return function(e){var n={};return n.items=e.data.data.splice(0,5),n.name=e.ad_name,n}});

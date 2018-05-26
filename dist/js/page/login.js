@@ -1,0 +1,1 @@
+"use strict";define(["jquery"],function(t){var e=t(".tips");t(".btn").click(function(){""==t(".user").val()?e.html("请输入用户名！"):""==t(".pwd").val()?e.html("请输入密码"):e.html(""),""==e.html()&&t.ajax({url:"/login",data:{user:t(".user").val(),pwd:t(".pwd").val()},type:"post",dataType:"json",success:function(t){1===t.code?location.href="../../index.html":2===t.code&&e.html(t.msg)}})})});

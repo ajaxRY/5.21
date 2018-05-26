@@ -1,0 +1,1 @@
+"use strict";define(["jquery","bscroll"],function(n,r){return function(n,e){return new r(e)}});
